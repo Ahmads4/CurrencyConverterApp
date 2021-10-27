@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.HomeFragment"
+    android:theme="@style/Theme.CurrencyConverter"
+    android:id="@+id/constraint_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        android:orientation="horizontal">
+
+
+    <EditText
+        android:id="@+id/amount_text"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_edit_text" />
+
+
+    <Spinner
+        android:id="@+id/spinner_first"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:entries="@array/currencies"
+        android:layout_marginStart="30dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:hint="Quantity"
+         />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spinner_second"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:entries="@array/currencies"
+            android:layout_marginStart="30dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:hint="Quantity"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
