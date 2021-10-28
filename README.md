@@ -4,16 +4,15 @@ Currency Converter is a simple and easy to use Android app that allows its users
 
 # ScreenShot
 
- <p float="left">
-  <img src="app/src/main/res/drawable-180dpi/currency_converter.jpeg" alt= "Trending" width="150"  /> &nbsp;
+ <p align="center">
+  <img src="app/src/main/res/drawable-180dpi/currency_converter.jpeg" alt= "App Screenshot" width="350"  /> &nbsp;
 </p>
-
 
 ## Architecture
 
 This application is done with the [model-view-viewmodel (MVVM) architecture](https://developer.android.com/jetpack/guide).
 
-<img src="app/src/main/res/drawable-180dpi/mvvm.png" alt="Details" width="700" />
+<img src="app/src/main/res/drawable-180dpi/mvvm.png" alt="Details" width="1000" />
 
 
 
